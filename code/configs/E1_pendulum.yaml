@@ -1,0 +1,19 @@
+env: pendulum_partial
+seeds: 5
+methods: [Ours, B1, B2, B3, B4, B5]
+n_id: 2000
+T: 1500
+K: 150
+eval_rollouts: 20
+lr: 0.03
+
+# Selected after a 5-draw random search per method (3 seeds, T/3):
+hyperparameters_chosen:
+  policy_hidden: [64, 64]
+  gae_lambda: 0.95
+  entropy_coef: 0.0
+  advantage_normalize: true
+  matern_nu: 2.5
+  ridge_grid: [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0]
+  sobolev_radius: 2.0
+  delta_buffer: 0.05

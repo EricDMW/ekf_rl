@@ -1,0 +1,35 @@
+{
+  "PPO": {
+    "success_rate": 1.0,
+    "mean_steps": 21.015,
+    "mean_return": 34.40943314515849,
+    "mean_final_dist": 0.22326793986543728,
+    "wall_hit_rate": 0.0,
+    "mean_path_ratio": 0.9328942956935982
+  },
+  "IQL": {
+    "success_rate": 1.0,
+    "mean_steps": 66.185,
+    "mean_return": 12.33506904220436,
+    "mean_final_dist": 0.2744252929816119,
+    "wall_hit_rate": 0.165,
+    "mean_path_ratio": 1.337067394301961
+  },
+  "TD3BC": {
+    "success_rate": 1.0,
+    "mean_steps": 33.715,
+    "mean_return": -10.145581274454731,
+    "mean_final_dist": 0.26649454358364366,
+    "wall_hit_rate": 0.47,
+    "mean_path_ratio": 1.0106687425863343
+  },
+  "CQL": {
+    "success_rate": 1.0,
+    "mean_steps": 66.34,
+    "mean_return": -144.4216958066249,
+    "mean_final_dist": 0.2588564357115692,
+    "wall_hit_rate": 0.935,
+    "mean_path_ratio": 2.4144901952214712
+  },
+  "winner": "PPO"
+}

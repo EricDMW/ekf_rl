@@ -1,0 +1,13 @@
+# Domain Randomization range used by B2.
+# The nominal parameters lie at the center; the range covers the true residual.
+
+pendulum_partial:
+  mass:    [0.7, 1.3]   # nominal = 1.0
+  length:  [0.7, 1.3]   # nominal = 1.0
+  damping: [0.05, 0.2]  # nominal = 0.10
+
+planar_quadrotor:
+  drag:        [0.0, 0.6]    # nominal = 0.0
+  thrust_gain: [0.85, 1.2]   # nominal = 1.0
+
+# Documentation: see DECISIONS.md "DR range for B2".

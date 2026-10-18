@@ -1,0 +1,70 @@
+# Model card — CQL (Conservative Q-Learning)
+
+**Role:** offline baseline
+**Type:** offline off-policy RL on the real transitions
+
+## Task
+Drive a **single** Unitree Go1 quadruped from **any** start position inside the
+arena to the fixed goal **(-2.0, -2.5) m**, within 0.3 m, under a
+maximum-speed limit, **without leaving the map**.
+
+- Map (arena): x in [-2.15, 2.0], y in [-2.7, 2.4] m
+- Max speed: |(vx,vy)| <= 1.5 m/s ; |omega| <= 2.5 rad/s
+- Control rate: 10 Hz
+
+## Performance (evaluated from 200 random start positions across the whole map)
+| metric | value |
+|--------|-------|
+| success rate            | **1.000** |
+| wall-violation rate     | **0.960** (contact away from the cornered goal) |
+| mean steps to goal      | 64  (~6.4 s) |
+| mean final distance (m) | 0.258 |
+| path ratio (1=optimal)  | 2.38 |
+
+## Observation (9-D, position-aware)
+| idx | name | meaning |
+|-----|------|---------|
+| 0 | `x` | robot x position (m), world frame |
+| 1 | `y` | robot y position (m), world frame |
+| 2 | `cos_yaw` | cosine of heading |
+| 3 | `sin_yaw` | sine of heading |
+| 4 | `gx_body` | goal x in the robot body frame (m) |
+| 5 | `gy_body` | goal y in the robot body frame (m) |
+| 6 | `vx` | current body forward velocity (m/s) |
+| 7 | `vy` | current body lateral velocity (m/s) |
+| 8 | `omega` | current yaw rate (rad/s) |
+
+## Action (3-D, body-frame twist)
+| idx | name | meaning |
+|-----|------|---------|
+| 0 | `vx` | body forward velocity command, |v|<= 1.5 m/s (disc cap on (vx,vy)) |
+| 1 | `vy` | body lateral velocity command |
+| 2 | `omega` | yaw-rate command, |omega|<= 2.5 rad/s |
+
+## Architecture
+Actor: Gaussian MLP [9-256-256-3] (SAC-style). Twin Q critics [12-256-256-1] with a conservative log-sum-exp penalty over random & policy actions (alpha 1.0). Obs normalised by dataset mean/std.
+
+## Training
+75k gradient steps on 4,705 real transitions; SAC backbone + CQL penalty.
+
+**Note:** Reaches the goal but hugs walls heavily and is the least stable here.
+
+## Dataset
+23 real Go1 mocap runs -> 4,705 transitions at 10 Hz. Careful handling:
+trajectories truncated at first goal entry; terminal only at genuine goal entry;
+runs classified (17 REACH / 5 approach / 1 NON-REACH); actions = body-frame twist
+clipped to the speed limit. (Offline models train on these transitions; PPO
+trains online in the env whose dynamics/limits are taken from this data.)
+
+## Files
+- `CQL.pt` — checkpoint: `state_dict`, obs mean/std, action scale, goal, map
+- `metrics.json` — evaluation summary + full training history
+
+## Usage
+```python
+from src.policy_io import load_policy
+from src.env import Go1GoalEnv, rollout
+act, meta = load_policy("models/cql_offline/CQL.pt")
+tr = rollout(act, Go1GoalEnv(), pose=(1.8, 2.0, 0.0))   # any (x, y, yaw)
+print(tr["reached"], tr["steps"], tr["final_dist"], "wall_hits:", tr["far_hits"])
+```

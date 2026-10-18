@@ -1,0 +1,127 @@
+[TD3BC]       1 | succ 0.04 | final_dist 5.053 | wall 0.92 | steps 387
+[TD3BC]    5000 | succ 1.00 | final_dist 0.271 | wall 0.38 | steps 34
+[TD3BC]   10000 | succ 0.70 | final_dist 0.546 | wall 0.56 | steps 145
+[TD3BC]   15000 | succ 0.92 | final_dist 0.371 | wall 0.34 | steps 83
+[TD3BC]   20000 | succ 0.66 | final_dist 0.845 | wall 0.60 | steps 162
+[TD3BC]   25000 | succ 0.12 | final_dist 2.023 | wall 0.96 | steps 357
+[TD3BC]   30000 | succ 0.06 | final_dist 2.679 | wall 0.98 | steps 377
+[TD3BC]   35000 | succ 0.08 | final_dist 2.304 | wall 0.94 | steps 370
+[TD3BC]   40000 | succ 0.10 | final_dist 2.900 | wall 1.00 | steps 364
+[TD3BC]   45000 | succ 0.02 | final_dist 3.931 | wall 0.98 | steps 393
+[TD3BC]   50000 | succ 0.02 | final_dist 2.318 | wall 1.00 | steps 395
+[TD3BC]   55000 | succ 0.02 | final_dist 2.790 | wall 0.98 | steps 393
+[TD3BC]   60000 | succ 0.04 | final_dist 4.061 | wall 0.96 | steps 386
+[TD3BC]   65000 | succ 0.02 | final_dist 3.704 | wall 0.98 | steps 393
+[TD3BC]   70000 | succ 0.08 | final_dist 3.444 | wall 0.94 | steps 371
+[TD3BC]   75000 | succ 0.02 | final_dist 4.547 | wall 0.98 | steps 393
+[TD3BC] done 111s | BEST succ 1.00 wall 0.38 dist 0.271
+[IQL]       1 | succ 0.04 | final_dist 4.960 | wall 0.92 | steps 387
+[IQL]    5000 | succ 0.96 | final_dist 0.366 | wall 0.16 | steps 89
+[IQL]   10000 | succ 1.00 | final_dist 0.275 | wall 0.14 | steps 66
+[IQL]   15000 | succ 0.98 | final_dist 0.349 | wall 0.08 | steps 82
+[IQL]   20000 | succ 0.92 | final_dist 0.502 | wall 0.20 | steps 115
+[IQL]   25000 | succ 0.96 | final_dist 0.354 | wall 0.04 | steps 113
+[IQL]   30000 | succ 0.98 | final_dist 0.327 | wall 0.04 | steps 114
+[IQL]   35000 | succ 0.98 | final_dist 0.349 | wall 0.14 | steps 156
+[IQL]   40000 | succ 1.00 | final_dist 0.277 | wall 0.30 | steps 151
+[IQL]   45000 | succ 0.96 | final_dist 0.429 | wall 0.12 | steps 162
+[IQL]   50000 | succ 0.80 | final_dist 1.078 | wall 0.38 | steps 210
+[IQL]   55000 | succ 0.90 | final_dist 0.576 | wall 0.20 | steps 159
+[IQL]   60000 | succ 0.92 | final_dist 0.713 | wall 0.28 | steps 179
+[IQL]   65000 | succ 0.98 | final_dist 0.325 | wall 0.30 | steps 177
+[IQL]   70000 | succ 0.84 | final_dist 0.928 | wall 0.32 | steps 216
+[IQL]   75000 | succ 0.78 | final_dist 1.052 | wall 0.42 | steps 220
+[IQL] done 168s | BEST succ 1.00 wall 0.14 dist 0.275
+[CQL]       1 | succ 0.04 | final_dist 5.245 | wall 0.92 | steps 388
+[CQL]    5000 | succ 0.82 | final_dist 0.594 | wall 0.84 | steps 174
+[CQL]   10000 | succ 0.66 | final_dist 2.122 | wall 0.86 | steps 200
+[CQL]   15000 | succ 0.20 | final_dist 3.273 | wall 0.94 | steps 326
+[CQL]   20000 | succ 0.00 | final_dist 5.165 | wall 1.00 | steps 400
+[CQL]   25000 | succ 0.00 | final_dist 6.325 | wall 1.00 | steps 400
+[CQL]   30000 | succ 0.00 | final_dist 6.186 | wall 1.00 | steps 400
+[CQL]   35000 | succ 0.00 | final_dist 6.000 | wall 1.00 | steps 400
+[CQL]   40000 | succ 0.52 | final_dist 0.736 | wall 0.84 | steps 221
+[CQL]   45000 | succ 0.04 | final_dist 1.626 | wall 0.48 | steps 385
+[CQL]   50000 | succ 0.06 | final_dist 1.843 | wall 0.46 | steps 378
+[CQL]   55000 | succ 0.06 | final_dist 2.272 | wall 0.68 | steps 381
+[CQL]   60000 | succ 0.04 | final_dist 2.349 | wall 0.76 | steps 388
+[CQL]   65000 | succ 0.76 | final_dist 0.665 | wall 0.86 | steps 227
+[CQL]   70000 | succ 1.00 | final_dist 0.258 | wall 0.96 | steps 64
+[CQL]   75000 | succ 1.00 | final_dist 0.267 | wall 0.96 | steps 70
+[CQL] done 331s | BEST succ 1.00 wall 0.96 dist 0.258
+[PPO]    16384 | succ 1.00 | final_dist 0.289 | wall 0.00 | steps 69
+[PPO]    32768 | succ 1.00 | final_dist 0.267 | wall 0.00 | steps 30
+[PPO]    49152 | succ 1.00 | final_dist 0.256 | wall 0.00 | steps 23
+[PPO]    65536 | succ 1.00 | final_dist 0.237 | wall 0.00 | steps 21
+[PPO]    81920 | succ 1.00 | final_dist 0.218 | wall 0.00 | steps 21
+[PPO]    98304 | succ 1.00 | final_dist 0.231 | wall 0.00 | steps 21
+[PPO]   114688 | succ 1.00 | final_dist 0.226 | wall 0.00 | steps 21
+[PPO]   131072 | succ 1.00 | final_dist 0.214 | wall 0.00 | steps 21
+[PPO]   147456 | succ 1.00 | final_dist 0.218 | wall 0.00 | steps 21
+[PPO]   163840 | succ 1.00 | final_dist 0.219 | wall 0.00 | steps 21
+[PPO]   180224 | succ 1.00 | final_dist 0.213 | wall 0.00 | steps 21
+[PPO]   196608 | succ 1.00 | final_dist 0.225 | wall 0.00 | steps 21
+[PPO]   212992 | succ 1.00 | final_dist 0.221 | wall 0.00 | steps 21
+[PPO]   229376 | succ 1.00 | final_dist 0.222 | wall 0.00 | steps 20
+[PPO]   245760 | succ 1.00 | final_dist 0.220 | wall 0.00 | steps 21
+[PPO]   262144 | succ 1.00 | final_dist 0.225 | wall 0.00 | steps 20
+[PPO]   278528 | succ 1.00 | final_dist 0.223 | wall 0.00 | steps 20
+[PPO]   294912 | succ 1.00 | final_dist 0.223 | wall 0.00 | steps 20
+[PPO]   311296 | succ 1.00 | final_dist 0.218 | wall 0.00 | steps 20
+[PPO]   327680 | succ 1.00 | final_dist 0.225 | wall 0.00 | steps 20
+[PPO]   344064 | succ 1.00 | final_dist 0.227 | wall 0.00 | steps 20
+[PPO]   360448 | succ 1.00 | final_dist 0.221 | wall 0.00 | steps 20
+[PPO]   376832 | succ 1.00 | final_dist 0.221 | wall 0.00 | steps 20
+[PPO]   393216 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   409600 | succ 1.00 | final_dist 0.224 | wall 0.00 | steps 20
+[PPO]   425984 | succ 1.00 | final_dist 0.231 | wall 0.00 | steps 20
+[PPO]   442368 | succ 1.00 | final_dist 0.221 | wall 0.00 | steps 20
+[PPO]   458752 | succ 1.00 | final_dist 0.223 | wall 0.00 | steps 20
+[PPO]   475136 | succ 1.00 | final_dist 0.228 | wall 0.00 | steps 20
+[PPO]   491520 | succ 1.00 | final_dist 0.226 | wall 0.00 | steps 20
+[PPO]   507904 | succ 1.00 | final_dist 0.226 | wall 0.00 | steps 20
+[PPO]   524288 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   540672 | succ 1.00 | final_dist 0.226 | wall 0.00 | steps 20
+[PPO]   557056 | succ 1.00 | final_dist 0.230 | wall 0.00 | steps 20
+[PPO]   573440 | succ 1.00 | final_dist 0.224 | wall 0.00 | steps 20
+[PPO]   589824 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   606208 | succ 1.00 | final_dist 0.226 | wall 0.00 | steps 20
+[PPO]   622592 | succ 1.00 | final_dist 0.230 | wall 0.00 | steps 20
+[PPO]   638976 | succ 1.00 | final_dist 0.227 | wall 0.00 | steps 20
+[PPO]   655360 | succ 1.00 | final_dist 0.223 | wall 0.00 | steps 20
+[PPO]   671744 | succ 1.00 | final_dist 0.223 | wall 0.00 | steps 20
+[PPO]   688128 | succ 1.00 | final_dist 0.230 | wall 0.00 | steps 20
+[PPO]   704512 | succ 1.00 | final_dist 0.228 | wall 0.00 | steps 20
+[PPO]   720896 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   737280 | succ 1.00 | final_dist 0.230 | wall 0.00 | steps 20
+[PPO]   753664 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   770048 | succ 1.00 | final_dist 0.231 | wall 0.00 | steps 20
+[PPO]   786432 | succ 1.00 | final_dist 0.232 | wall 0.00 | steps 20
+[PPO]   802816 | succ 1.00 | final_dist 0.231 | wall 0.00 | steps 20
+[PPO]   819200 | succ 1.00 | final_dist 0.236 | wall 0.00 | steps 20
+[PPO]   835584 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   851968 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   868352 | succ 1.00 | final_dist 0.228 | wall 0.00 | steps 20
+[PPO]   884736 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   901120 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   917504 | succ 1.00 | final_dist 0.228 | wall 0.00 | steps 20
+[PPO]   933888 | succ 1.00 | final_dist 0.228 | wall 0.00 | steps 20
+[PPO]   950272 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   966656 | succ 1.00 | final_dist 0.229 | wall 0.00 | steps 20
+[PPO]   983040 | succ 1.00 | final_dist 0.227 | wall 0.00 | steps 20
+[PPO]   999424 | succ 1.00 | final_dist 0.227 | wall 0.00 | steps 20
+[PPO]  1003520 | succ 1.00 | final_dist 0.227 | wall 0.00 | steps 20
+[PPO] done 309s | BEST succ 1.00 wall 0.00 dist 0.213
+
+---- final evaluation on 200 random map positions ----
+  TD3BC  succ=1.000 wall=0.470 dist=0.266 steps=34
+  IQL    succ=1.000 wall=0.165 dist=0.274 steps=66
+  CQL    succ=1.000 wall=0.935 dist=0.259 steps=66
+  PPO    succ=1.000 wall=0.000 dist=0.223 steps=21
+
+==== COMPARISON (best checkpoint; eval from random map positions) ====
+  PPO    succ=1.000 wall=0.000 final_dist=0.223 steps=21 path_ratio=0.93
+  IQL    succ=1.000 wall=0.165 final_dist=0.274 steps=66 path_ratio=1.34
+  TD3BC  succ=1.000 wall=0.470 final_dist=0.266 steps=34 path_ratio=1.01
+  CQL    succ=1.000 wall=0.935 final_dist=0.259 steps=66 path_ratio=2.41
+WINNER: PPO -> policies/best_policy.pt

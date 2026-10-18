@@ -1,0 +1,25 @@
+{
+  "K": 100,
+  "T": 120,
+  "deploy_exit_prob": 0.0,
+  "deploy_grad_norm_sq": 12.700338376613331,
+  "deploy_return_mean": -0.9475453660429081,
+  "deploy_return_std": 0.7683448755305007,
+  "env": "pendulum_partial",
+  "exec_gap": -0.006431599743394245,
+  "filter_err_mean": 0.11691224831867504,
+  "git_sha": "no-git",
+  "id_info": {
+    "ell_f": 3.115195616633807,
+    "ell_h": 2.5315870446943594,
+    "mse_f": 0.000534994636289635,
+    "mse_h": 0.017218309121660454,
+    "n_samples": 1000,
+    "ridge_f": 1.0,
+    "ridge_h": 1.0
+  },
+  "method": "B5",
+  "n_id": 1000,
+  "seed": 1,
+  "wallclock_sec": 42.699289321899414
+}

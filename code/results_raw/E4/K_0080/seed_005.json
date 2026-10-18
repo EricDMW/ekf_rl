@@ -1,0 +1,12 @@
+{
+  "H_long": 400,
+  "K": 80,
+  "deploy_grad_norm_sq": 0.10909556301376255,
+  "deploy_return_mean": -0.33029617468835837,
+  "git_sha": "no-git",
+  "n_rollouts": 30,
+  "seed": 5,
+  "trunc_bias_mean": 0.33029617468835837,
+  "trunc_bias_std": 0.10029244771478671,
+  "wallclock_sec": 8.460543394088745
+}

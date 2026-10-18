@@ -1,0 +1,19 @@
+{
+  "K": 100,
+  "T": 120,
+  "deploy_exit_prob": 0.0,
+  "deploy_grad_norm_sq": 4.405594714664222,
+  "deploy_return_mean": -1.671021055360809,
+  "deploy_return_std": 1.1274487823931283,
+  "env": "pendulum_partial",
+  "exec_gap": 0.6039199279290228,
+  "filter_err_mean": 0.4535004933794446,
+  "git_sha": "no-git",
+  "id_info": {
+    "skipped": true
+  },
+  "method": "B2",
+  "n_id": 1000,
+  "seed": 0,
+  "wallclock_sec": 27.54037356376648
+}

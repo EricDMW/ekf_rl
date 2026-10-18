@@ -1,0 +1,14 @@
+env: planar_quadrotor
+seeds: 5
+methods: [Ours, B1, B2, B3, B4, B5]
+n_id: 2000
+T: 1200
+K: 80
+eval_rollouts: 15
+lr: 0.003
+
+hyperparameters_chosen:
+  policy_hidden: [64, 64]
+  gae_lambda: 0.95
+  policy_log_sigma_init: -3.0
+  thrust_bias: atanh(mg/T_max)
